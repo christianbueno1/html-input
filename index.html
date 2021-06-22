@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input tag</title>
+</head>
+<body>
+    <div class="container">
+        <form action="run.php" method="GET" id="form1">
+            <p>Fedora Image Architecture</p>
+            <div class="theform">
+                <input type="radio" name="arch" id="i686" value="i686" checked>
+                <label for="i686">i686</label>
+            </div>
+            <div class="theform">
+                <input type="radio" name="arch" id="x86_64" value="x86_64">
+                <label for="x86_64">x86_64</label>
+            </div>
+            <div class="theform">
+                <input type="radio" name="arch" id="aarch64" value="aarch64">
+                <label for="aarch64">aarch64</label>
+            </div>
+            <div class="theform">
+                <input type="submit" value="Send" name="submit">
+            </div>
+        </form>
+        <h1>Select, option</h1>
+        <form action="#" method="GET" id="form2">
+            <p>Select your region</p>
+            <div class="theform">
+                <select name="region" id="region">
+                    <option value="ecuador">Ecuador</option>
+                    <option value="peru">Peru</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="panama">Panama</option>
+                    <option value="elsalvador">El Salvador</option>
+                    <option value="costarica">Costa Rica</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+            <div class="theform">
+                <input type="submit" value="Send" name="submit2">
+            </div>
+        </form>
+        <h1>Details, summary</h1>
+        <form action="#" id="form3">
+            <div class="theform">
+                <h2>Owncast options</h2>
+                <details open>
+                    <summary>advanced options</summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis temporibus sit culpa ea dolores. Reprehenderit hic, sunt sequi minus maxime in itaque fugiat! Enim nemo, atque mollitia dicta velit esse quasi delectus? Sunt, porro similique?</p>
+                </details>
+            </div>
+        </form>
+        <h1>Checkbox</h1>
+        <form action="#" id="form4">
+            <div>
+                <p>Optional Add-ons</p>
+                <div class="theform">
+                    <input type="checkbox" name="addons1" id="backups" value="backups">
+                    <label for="backups">Backups</label>
+                </div>
+                <div class="theform">
+                    <input type="checkbox" name="addons2" id="privateip" value="privateip">
+                    <label for="privateip">Private ip</label>
+                </div>
+            </div>
+            <div class="theform">
+                <input type="submit" value="send" name="submit4">
+            </div>
+        </form>
+        <h1>Number, range</h1>
+        <form action="#" id="form5">
+            <p>System Options, resource allocation</p>
+            <div class="theform">
+                <label for="cpu">Compue Engine</label><br>
+                <input type="number" id="cpu" name="cpu" min="2" max="24" step="2">
+            </div>
+            <div class="theform">
+                <label for="memory">Memory:</label><br>
+                <input type="range" name="memory" id="memory" min="3" max="30" step="3">
+            </div>
+            <div class="theform">
+                <input type="submit" value="send" name="submit5">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
